@@ -1,23 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.hero{
+
+/* Base styles */
+.hero {
     width: 100%;
     height: 100vh;
     background-image: url("./img/background.png");
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow:hidden ;
+    overflow: hidden;
+}
 
-}
-.logo{
+.logo {
     width: 100px;
-    cursor: pointer;   
+    cursor: pointer;
 }
-.navbar{
+
+.navbar {
     width: 85%;
     height: 15%;
     margin: auto;
@@ -25,7 +28,8 @@
     align-items: center;
     justify-content: space-between;
 }
-button{
+
+button {
     color: #fbfcfd;
     padding: 10px 25px;
     background: transparent;
@@ -34,62 +38,65 @@ button{
     outline: none;
     cursor: pointer;
 }
-.content{
+
+.content {
     color: #fbfcfd;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 10%;
     transform: translateY(-50%);
     z-index: 2;
 }
-h1{
+
+h1 {
     font-size: 80px;
     margin: 10px 0 30px;
     line-height: 80px;
 }
 
-.sidebar{
+.sidebar {
     width: 50px;
     height: 100vh;
-    background: linear-gradient(#00545d,#000729);
+    background: linear-gradient(#00545d, #000729);
     position: absolute;
     right: 0;
     top: 0;
 }
-.menu{
+
+.menu {
     display: block;
     cursor: pointer;
     width: 25px;
     margin: 40px auto 0;
-
 }
-.sci img ,.useful-links img{
+
+.sci img, .useful-links img {
     width: 25px;
     margin: 5px auto;
     cursor: pointer;
-    
-
 }
-.sci{
+
+.sci {
     width: 50px;
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
 }
-.useful-links{
+
+.useful-links {
     width: 50px;
     position: absolute;
     text-align: center;
     bottom: 30px;
-    
 }
-.bubbles img{
+
+.bubbles img {
     width: 50px;
     animation: bubble 7s linear infinite;
-
 }
-.bubbles{
+
+.bubbles {
     width: 100%;
     display: flex;
     align-items: center;
@@ -99,48 +106,97 @@ h1{
 }
 
 @keyframes bubble {
-    0%{
+    0% {
         transform: translateY(0);
         opacity: 0;
     }
-    50%{
-    
+    50% {
         opacity: 1;
     }
-    70%{
-       
+    70% {
         opacity: 1;
     }
-    100%{
+    100% {
         transform: translateY(-80vh);
         opacity: 0;
     }
-    
 }
 
-.bubbles img:nth-child(1){
-    animation-delay:2s;
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
     width: 25px;
 }
-.bubbles img:nth-child(2){
-    animation-delay:1s;
+
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
 }
-.bubbles img:nth-child(3){
-    animation-delay:3s;
+
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
     width: 25px;
 }
-.bubbles img:nth-child(4){
-    animation-delay:4.5s;
+
+.bubbles img:nth-child(4) {
+    animation-delay: 4.5s;
 }
-.bubbles img:nth-child(5){
-    animation-delay:3s;
+
+.bubbles img:nth-child(5) {
+    animation-delay: 3s;
     width: 25px;
 }
-.bubbles img:nth-child(6){
-    animation-delay:6s;
+
+.bubbles img:nth-child(6) {
+    animation-delay: 6s;
     width: 20px;
 }
-.bubbles img:nth-child(7){
-    animation-delay:7s;
+
+.bubbles img:nth-child(7) {
+    animation-delay: 7s;
     width: 35px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .content {
+        left: 5%;
+    }
+
+    .bubbles img {
+        width: 40px;
+    }
+
+    .bubbles {
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .content {
+        left: 2%;
+    }
+
+    .bubbles img {
+        width: 30px;
+    }
+
+    .bubbles {
+        bottom: -30px;
+    }
 }
