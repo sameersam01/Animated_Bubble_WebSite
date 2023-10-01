@@ -39,6 +39,10 @@ button {
     cursor: pointer;
 }
 
+.b1{
+     padding: 20px 25px;
+}
+
 .content {
     color: #fbfcfd;
     position: absolute;
