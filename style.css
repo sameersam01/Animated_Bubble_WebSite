@@ -161,27 +161,7 @@ h1 {
 
 /* Media Queries for Responsiveness */
 
-@media (max-width: 768px) {
-    .navbar {
-        width: 95%;
-    }
 
-    h1 {
-        font-size: 60px;
-    }
-
-    .content {
-        left: 5%;
-    }
-
-    .bubbles img {
-        width: 40px;
-    }
-
-    .bubbles {
-        bottom: -50px;
-    }
-}
 
 @media (max-width: 480px) {
     .navbar {
